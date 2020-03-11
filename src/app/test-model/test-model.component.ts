@@ -22,10 +22,11 @@ export class TestModelComponent implements AfterViewInit {
 
    async initCam() {
      const vid = this.video.nativeElement;
-
+    console.log("dans le initCam");
      if (navigator.mediaDevices.getUserMedia) {
        navigator.mediaDevices.getUserMedia({ video: true })
          .then((stream) => {
+           console.log('affect cam');
            vid.srcObject = stream;
          })
          .catch((err0r) => {
