@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TestModelComponent } from './test-model/test-model.component';
+import {MyDetectorComponent} from 'my-detector';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestModelComponent
+    TestModelComponent,
+    MyDetectorComponent
   ],
   imports: [
     BrowserModule,
